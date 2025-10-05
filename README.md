@@ -2,6 +2,7 @@
 
 Thisis the first phase of learning Bloc State management in flutter 
 -On 4th Oct 2025 Initialize the git repo with the very first of The LEarning Journey
+-on 5th Oct 2025 Multiple Bloc and Bloc rebuild option has been closed
 
 ## Getting Started
 
