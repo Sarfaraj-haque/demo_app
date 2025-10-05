@@ -1,5 +1,9 @@
 import 'package:demo_app/counter_app/counter_bloc.dart';
-import 'package:demo_app/counter_app_ui/counter_app_ui.dart';
+import 'package:demo_app/screens/counter_app_ui/counter_app_ui.dart';
+import 'package:demo_app/screens/slider_ui.dart';
+import 'package:demo_app/screens/switch/switch_ui.dart';
+import 'package:demo_app/slider/slider_bloc.dart';
+import 'package:demo_app/switch/switch_bloc.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
@@ -12,31 +16,14 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return BlocProvider(
-      create: (_) => CounterBloc(),
+    return MultiBlocProvider(
+      providers: [
+        BlocProvider(create: (_) => SwitchBloc()),
+        BlocProvider(create: (_) => SliderBloc()),
+      ],
       child: MaterialApp(
         debugShowCheckedModeBanner: false,
-        home: Scaffold(
-          body: CounterApp(),
-
-          // Center(
-          //   child: Column(
-          //     mainAxisAlignment: MainAxisAlignment.center,
-          //     children: [
-          //       Text('Welcom to Learning the bloc State managment'),
-          //       IconButton(
-          //         onPressed: () {
-          //           Navigator.push(
-          //             context,
-          //             MaterialPageRoute(builder: (context) => CounterApp()),
-          //           );
-          //         },
-          //         icon: Icon(Icons.forward),
-          //       ),
-          //     ],
-          //   ),
-          // ),
-        ),
+        home: Scaffold(body: SliderUi()),
       ),
     );
   }
