@@ -1,6 +1,7 @@
 # demo_app
 
-A new Flutter project.
+Thisis the first phase of learning Bloc State management in flutter 
+-On 4th Oct 2025 Initialize the git repo with the very first of The LEarning Journey
 
 ## Getting Started
 
