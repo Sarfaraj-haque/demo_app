@@ -3,6 +3,7 @@
 Thisis the first phase of learning Bloc State management in flutter 
 -On 4th Oct 2025 Initialize the git repo with the very first of The LEarning Journey
 -on 5th Oct 2025 Multiple Bloc and Bloc rebuild option has been closed
+-on 6th Oct 2025 We have Learned about Todo App Where using bloc making it simple add & remove todos
 
 ## Getting Started
 
